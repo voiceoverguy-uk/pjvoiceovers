@@ -12,17 +12,17 @@ const inter = Inter({
 const siteUrl = 'https://www.pjvoiceovers.com';
 
 export const metadata: Metadata = {
-  title: 'PJ Voiceovers | British Male Voiceover Artist - Paul Jones',
+  title: 'PJ Voiceovers | British & Welsh Voiceover Artist - Paul Jones',
   description:
-    'Paul Jones is an award-winning British male voiceover artist with a professional studio. Covering commercials, narration, e-learning, character voices and audio drama. Fast turnaround. Get in touch today.',
+    'Paul Jones is an award-winning British & Welsh voiceover artist with a professional studio. Covering commercials, narration, e-learning, character voices and audio drama. Fast turnaround. Get in touch today.',
   metadataBase: new URL(siteUrl),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'PJ Voiceovers | British Male Voiceover Artist',
+    title: 'PJ Voiceovers | British & Welsh Voiceover Artist',
     description:
-      'Award-winning British male voiceover artist Paul Jones. Professional studio, fast turnaround, covering commercials, narration, character voices and more.',
+      'Award-winning British & Welsh voiceover artist Paul Jones. Professional studio, fast turnaround, covering commercials, narration, character voices and more.',
     url: siteUrl,
     siteName: 'PJ Voiceovers',
     locale: 'en_GB',
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PJ Voiceovers | British Male Voiceover Artist',
+    title: 'PJ Voiceovers | British & Welsh Voiceover Artist',
     description:
-      'Award-winning British male voiceover artist Paul Jones. Professional studio, fast turnaround.',
+      'Award-winning British & Welsh voiceover artist Paul Jones. Professional studio, fast turnaround.',
   },
 };
 
