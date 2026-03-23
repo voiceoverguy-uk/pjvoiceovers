@@ -1,5 +1,13 @@
 import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import './globals.css';
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 const siteUrl = 'https://www.pjvoiceovers.com';
 
@@ -63,16 +71,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en-GB">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="bg-[#0a0a0a] text-gray-100 antialiased">
+    <html lang="en-GB" className={inter.variable}>
+      <body className={`${inter.className} bg-[#0a0a0a] text-gray-100 antialiased`}>
         {children}
         <script
           type="application/ld+json"

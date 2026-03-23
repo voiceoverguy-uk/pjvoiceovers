@@ -10,8 +10,10 @@ export default function VideoWork() {
   const selected = videoWork.find((v) => v.id === selectedId) ?? videoWork[0];
 
   const handleSelect = (id: number) => {
-    setSelectedId(id);
-    setPlaying(false);
+    if (id !== selectedId) {
+      setSelectedId(id);
+      setPlaying(false);
+    }
   };
 
   return (
@@ -29,7 +31,7 @@ export default function VideoWork() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6">
+        <div className="grid lg:grid-cols-3 gap-6 items-start">
           {/* Main player */}
           <div className="lg:col-span-2">
             <div className="relative rounded-2xl overflow-hidden bg-black aspect-video shadow-2xl">
@@ -55,8 +57,19 @@ export default function VideoWork() {
                     <h3 className="text-white font-semibold text-lg drop-shadow-lg">
                       {selected.title}
                     </h3>
+                    {selected.description && (
+                      <p className="text-gray-300 text-sm mt-0.5 drop-shadow">{selected.description}</p>
+                    )}
                   </div>
                 </>
+              ) : selected.youtubeId ? (
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/${selected.youtubeId}?autoplay=1&rel=0`}
+                  title={selected.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
               ) : (
                 <video
                   src={selected.video}
@@ -70,16 +83,16 @@ export default function VideoWork() {
             </div>
           </div>
 
-          {/* Thumbnail list */}
-          <div className="flex flex-col gap-3">
-            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
-              More credits
+          {/* Thumbnail sidebar — scrollable */}
+          <div className="flex flex-col gap-2 lg:max-h-[430px] overflow-y-auto pr-1">
+            <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1 flex-shrink-0">
+              All credits ({videoWork.length})
             </p>
             {videoWork.map((video) => (
               <button
                 key={video.id}
                 onClick={() => handleSelect(video.id)}
-                className={`flex items-center gap-3 p-3 rounded-xl border text-left transition-all duration-200 ${
+                className={`flex items-center gap-3 p-2.5 rounded-xl border text-left transition-all duration-200 flex-shrink-0 ${
                   video.id === selectedId
                     ? 'bg-red-950/30 border-red-700/50'
                     : 'bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20'
@@ -92,9 +105,14 @@ export default function VideoWork() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <span className="text-sm font-medium text-gray-200 leading-tight line-clamp-2">
-                  {video.title}
-                </span>
+                <div className="min-w-0">
+                  <span className="text-sm font-medium text-gray-200 leading-tight line-clamp-2 block">
+                    {video.title}
+                  </span>
+                  {video.youtubeId && (
+                    <span className="text-xs text-gray-500 mt-0.5 block">YouTube</span>
+                  )}
+                </div>
               </button>
             ))}
           </div>

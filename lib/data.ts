@@ -48,8 +48,10 @@ export interface AudioDemo {
 export interface VideoWork {
   id: number;
   title: string;
-  video: string;
+  description?: string;
   poster: string;
+  video?: string;
+  youtubeId?: string;
 }
 
 export const audioDemos: AudioDemo[] = [
@@ -121,6 +123,98 @@ export const videoWork: VideoWork[] = [
     title: 'Virgin Trains - Train vs Plane',
     video: '/videos/virgin-trains-train-vs-plane.mp4',
     poster: '/posters/virgin-trains.png',
+  },
+  {
+    id: 5,
+    title: 'Strepsils Sore Throat & Cough',
+    youtubeId: 'TugGF3S5NVo',
+    poster: '/posters/strepsils.jpg',
+  },
+  {
+    id: 6,
+    title: 'Bensons for Beds 2013',
+    video: '/videos/bensons-for-beds-2013.mp4',
+    poster: '/posters/bensons.jpg',
+  },
+  {
+    id: 7,
+    title: 'Southampton Boat Show 2016',
+    video: '/videos/southampton-boat-show-2016.mp4',
+    poster: '/posters/southampton.jpg',
+  },
+  {
+    id: 8,
+    title: 'Sword in the Stone - Alternate Opening',
+    video: '/videos/sword-in-the-stone.mp4',
+    poster: '/posters/sword-in-the-stone.jpg',
+  },
+  {
+    id: 9,
+    title: 'Because Dads Are The Best - Moonpig.com',
+    description: "Moonpig TV Advert Father's Day 2014",
+    video: '/videos/moonpig-because-dads.mp4',
+    poster: '/posters/moonpig.jpg',
+  },
+  {
+    id: 10,
+    title: 'CitizenCard - Librarian to Disco Diva',
+    description: 'Tom Baker style voiceover narration',
+    video: '/videos/citizencard.mp4',
+    poster: '/posters/citizencard.jpg',
+  },
+  {
+    id: 11,
+    title: 'Coors Freeze The World - US TV Advert',
+    video: '/videos/coors-freeze-the-world.mp4',
+    poster: '/posters/coors.jpg',
+  },
+  {
+    id: 12,
+    title: 'Supercharge Your Earning Potential - Pingtree',
+    video: '/videos/pingtree.mp4',
+    poster: '/posters/pingtree.jpg',
+  },
+  {
+    id: 13,
+    title: 'Zagzig Television Advert',
+    video: '/videos/zagzig.mp4',
+    poster: '/posters/zagzig.jpg',
+  },
+  {
+    id: 14,
+    title: 'Bioglan Red Krill - Boots Advert',
+    video: '/videos/bioglan-red-krill.mp4',
+    poster: '/posters/bioglan.jpg',
+  },
+  {
+    id: 15,
+    title: 'BLOBO - TV Advert',
+    youtubeId: '1dZXu5rNXq8',
+    poster: '/posters/blobo.jpg',
+  },
+  {
+    id: 16,
+    title: 'CartridgePeople.com - TV Advert',
+    youtubeId: 'ypy6KFRodf0',
+    poster: '/posters/cartridgepeople.jpg',
+  },
+  {
+    id: 17,
+    title: 'Bongo - TV Advert 1',
+    youtubeId: 'COxq36mvst4',
+    poster: '/posters/bongo1.jpg',
+  },
+  {
+    id: 18,
+    title: 'Bongo - TV Advert 2',
+    youtubeId: 'IDO_8jdhzPU',
+    poster: '/posters/bongo2.jpg',
+  },
+  {
+    id: 19,
+    title: "The Dog's Doodahs - TV Advert",
+    youtubeId: '9yugeRsHwAA',
+    poster: '/posters/dogs-doodahs.jpg',
   },
 ];
 
