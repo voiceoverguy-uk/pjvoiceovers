@@ -15,7 +15,7 @@ export const siteConfig = {
     sectionLabel: 'About Paul',
     heading: 'The voice behind the brand',
     paragraphs: [
-      'Paul Jones is an award-winning British male voiceover artist with over 15 years of professional experience. Based in the UK with a fully equipped home studio, Paul delivers broadcast-quality recordings with a fast turnaround for clients around the world.',
+      'Paul Jones is an award-winning British voiceover with over 20 years of professional experience. Based in the UK with a fully equipped home studio, Paul delivers broadcast-quality recordings with a fast turnaround.',
       'From TV and radio commercials to corporate narration, e-learning modules, character voices and audio drama, Paul brings versatility, professionalism and genuine warmth to every project.',
       'His credits include campaigns for major brands, drama productions for Big Finish, and voiceover work heard across the UK and internationally.',
     ],
