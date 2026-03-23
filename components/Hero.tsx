@@ -47,9 +47,7 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <p className="text-red-500 uppercase tracking-widest text-sm font-semibold mb-6">
-          {hero.subheadline}
-        </p>
+
         <h1 className="text-6xl md:text-8xl font-black text-white tracking-tight leading-none mb-6">
           PJ
           <br />
