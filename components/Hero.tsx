@@ -23,11 +23,11 @@ export default function Hero() {
         src="/pj-hero.jpg"
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover object-center opacity-20"
+        className="absolute inset-0 w-full h-full object-cover object-center opacity-40"
       />
       {/* Dark gradient over the photo so text stays readable */}
       <div
-        className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/80 via-[#0a0a0a]/60 to-[#0a0a0a]/90"
+        className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/70 via-[#0a0a0a]/40 to-[#0a0a0a]/80"
         aria-hidden="true"
       />
       {/* Red glow */}

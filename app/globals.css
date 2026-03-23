@@ -14,7 +14,7 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid #26c797;
+  outline: 2px solid #2689c7;
   outline-offset: 3px;
   border-radius: 3px;
 }
@@ -34,7 +34,7 @@ body {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #26c797;
+  background: #2689c7;
   cursor: pointer;
 }
 
@@ -42,7 +42,7 @@ body {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #26c797;
+  background: #2689c7;
   border: none;
   cursor: pointer;
 }
