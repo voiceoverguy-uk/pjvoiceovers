@@ -1,3 +1,43 @@
+export const siteConfig = {
+  name: 'PJ Voiceovers',
+  person: 'Paul Jones',
+  tagline: 'British Male Voiceover Artist',
+  phone: '07970 118818',
+  phoneHref: 'tel:07970118818',
+  email: 'paul@pjvoiceovers.com',
+  emailHref: 'mailto:paul@pjvoiceovers.com',
+  hero: {
+    headline: 'PJ Voiceovers',
+    subheadline: 'British Male Voiceover Artist',
+    body: 'Paul Jones is an experienced, award-winning UK voiceover artist with a professional studio and fast turnaround, covering commercials, narration, character work and more.',
+  },
+  about: {
+    sectionLabel: 'About Paul',
+    heading: 'The voice behind the brand',
+    paragraphs: [
+      'Paul Jones is an award-winning British male voiceover artist with over 15 years of professional experience. Based in the UK with a fully equipped home studio, Paul delivers broadcast-quality recordings with a fast turnaround for clients around the world.',
+      'From TV and radio commercials to corporate narration, e-learning modules, character voices and audio drama, Paul brings versatility, professionalism and genuine warmth to every project.',
+      'His credits include campaigns for major brands, drama productions for Big Finish, and voiceover work heard across the UK and internationally.',
+    ],
+    stats: [
+      { value: '15+', label: 'Years Experience' },
+      { value: '500+', label: 'Projects Delivered' },
+      { value: '24hr', label: 'Typical Turnaround' },
+      { value: 'Award', label: 'Winning Artist' },
+    ],
+  },
+  contact: {
+    heading: 'Ready to work together?',
+    body: 'Whether you need a full voiceover demo, a quote for a project, or just want to ask a question, Paul would love to hear from you. Get in touch today for a fast, friendly response.',
+    badges: [
+      'Available for remote sessions',
+      'Source Connect Ready',
+      'Fast turnaround',
+      'UK based',
+    ],
+  },
+};
+
 export interface AudioDemo {
   id: number;
   title: string;
