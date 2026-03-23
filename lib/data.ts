@@ -61,26 +61,26 @@ export const videoWork: VideoWork[] = [
   {
     id: 1,
     title: 'Lego Movie DVD Legoland Trail',
-    video: 'http://www.pj-voiceovers.co.uk/wp-content/uploads/2014/07/Lego-Movie-DVD-Legoland-Trail.mp4',
-    poster: 'http://www.pj-voiceovers.co.uk/wp-content/uploads/2014/07/legoland-windsor-resort.jpg',
+    video: '/videos/lego-legoland-trail.mp4',
+    poster: '/posters/legoland.jpg',
   },
   {
     id: 2,
     title: 'Twix TV Commercial',
-    video: 'http://www.pj-voiceovers.co.uk/wp-content/uploads/2015/05/Twix-TV-Commercial-PJ-Voiceovers-UK.mp4',
-    poster: 'http://www.pj-voiceovers.co.uk/wp-content/uploads/2015/05/Twix-Male-Voiceover-UK-PJ.jpg',
+    video: '/videos/twix-tv-commercial.mp4',
+    poster: '/posters/twix.jpg',
   },
   {
     id: 3,
     title: "Moonpig Father's Day TVC",
-    video: 'http://www.pj-voiceovers.co.uk/wp-content/uploads/2016/05/Moonpig-Fathers-Day-2015-Gifts.mp4',
-    poster: 'http://www.pj-voiceovers.co.uk/wp-content/uploads/2013/05/moonpig_com_logo.jpg',
+    video: '/videos/moonpig-fathers-day.mp4',
+    poster: '/posters/moonpig.jpg',
   },
   {
     id: 4,
     title: 'Virgin Trains - Train vs Plane',
-    video: 'http://www.pj-voiceovers.co.uk/wp-content/uploads/2017/05/Train-vs-Plane-the-Virgin-Trains-experience-means-no-more-airport-queues.mp4',
-    poster: 'http://www.pj-voiceovers.co.uk/wp-content/uploads/2017/05/virgin-trains-squarelogo-1428048342308.png',
+    video: '/videos/virgin-trains-train-vs-plane.mp4',
+    poster: '/posters/virgin-trains.png',
   },
 ];
 
