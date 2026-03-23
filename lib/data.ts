@@ -20,7 +20,7 @@ export const siteConfig = {
       'His credits include campaigns for major brands, drama productions for Big Finish, and voiceover work heard across the UK and internationally.',
     ],
     stats: [
-      { value: '15+', label: 'Years Experience' },
+      { value: '20+', label: 'Years Experience' },
       { value: '500+', label: 'Projects Delivered' },
       { value: '24hr', label: 'Typical Turnaround' },
       { value: 'Award', label: 'Winning Artist' },
