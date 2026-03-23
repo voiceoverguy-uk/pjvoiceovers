@@ -1,0 +1,203 @@
+Build a modern single-page voiceover website for PJ Voiceovers, designed for deployment on Vercel.
+
+Tech stack:
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+Goal:
+Create a clean, premium, mobile-friendly one-page website for British male voiceover artist Paul Jones, replacing an old WordPress site. The site should feel modern, polished, fast, and easy to update.
+
+Important:
+I will upload 7 MP3 audio demo files directly into the project. Build the site so the audio player section uses these local uploaded files, not external WordPress links.
+
+Uploaded audio files to use:
+- /audio/pj-character-demo.mp3
+- /audio/big-finish-pj-acting-demo.mp3
+- /audio/pj-narration-example.mp3
+- /audio/welsh-accent-showreel.mp3
+- /audio/big-voice-pj-example.mp3
+- /audio/commercial-voice-reel-2-pj-voiceovers.mp3
+- /audio/pj-commercial-voiceover-demo.mp3
+
+Match these filenames to these demo titles:
+1. UK Male Commercial Voiceover Demo
+   file: /audio/pj-commercial-voiceover-demo.mp3
+
+2. Commercial Voice Reel 2 PJ Voiceovers
+   file: /audio/commercial-voice-reel-2-pj-voiceovers.mp3
+
+3. BIG Announcer Voice
+   file: /audio/big-voice-pj-example.mp3
+
+4. Welsh Accent Showreel
+   file: /audio/welsh-accent-showreel.mp3
+
+5. Narration - Warm Friendly
+   file: /audio/pj-narration-example.mp3
+
+6. Audio Drama Demo (with Alexander Vlahos)
+   file: /audio/big-finish-pj-acting-demo.mp3
+
+7. Quick Fire Character Demo
+   file: /audio/pj-character-demo.mp3
+
+Brand / content:
+Name: PJ Voiceovers
+Person: Paul Jones
+Tagline: British Male Voiceover Artist
+Phone: 07970 118818
+Email: paul@pjvoiceovers.com
+
+Service areas:
+- E-learning
+- Corporate narration
+- On-hold voices
+- Radio and TV commercials
+- Video game characters
+- Audio drama
+- Accents, impressions and character voices
+
+Tone:
+Professional, friendly, credible, broadcast-quality. Keep the copy concise and current. Remove outdated wording like “during UK lockdown”.
+
+Design direction:
+- Dark premium theme
+- Strong modern typography
+- Red accent colour inspired by the old branding
+- Big confident hero section
+- Stylish audio demos section
+- Featured video work section
+- Services section
+- Studio and delivery section
+- Contact CTA section
+- Fully responsive
+- Smooth scrolling nav
+- Rounded cards, tasteful shadows, clean spacing
+- Make it feel like a proper modern VO website, not a template
+
+Single-page sections:
+1. Sticky header / nav
+2. Hero
+3. About / intro
+4. Audio demo reels
+5. Featured video work
+6. Services
+7. Studio / delivery
+8. Contact
+9. Footer
+
+Hero section:
+Headline: PJ Voiceovers
+Subheadline: British Male Voiceover Artist
+Supporting copy: Paul Jones is an experienced, award-winning UK voiceover artist with a professional studio and fast turnaround, covering commercials, narration, character work and more.
+Buttons:
+- Listen to Demos
+- Get in Touch
+
+Audio demos section:
+This is important.
+
+Build a polished custom audio demos section using the 7 uploaded MP3 files listed above.
+
+Requirements for the audio section:
+- Show all 7 demo titles clearly
+- Use a clean card layout
+- Each card should include:
+  - title
+  - short optional category label if useful
+  - HTML5 audio player or a custom styled player
+- Also add a “Play All Demos” style experience if sensible, but only if it works cleanly
+- Only one demo should play at a time. If a new one starts, stop the others
+- Make the section look modern and premium, not like browser-default controls dumped on the page
+- Use reusable data arrays for demo content
+
+Featured video work section:
+Create a featured section for TV/commercial work using these existing assets from the old site.
+
+Video items:
+- Lego Movie DVD Legoland Trail
+  video: http://www.pj-voiceovers.co.uk/wp-content/uploads/2014/07/Lego-Movie-DVD-Legoland-Trail.mp4
+  image: http://www.pj-voiceovers.co.uk/wp-content/uploads/2014/07/legoland-windsor-resort.jpg
+
+- Twix TV Commercial PJ Voiceovers UK
+  video: http://www.pj-voiceovers.co.uk/wp-content/uploads/2015/05/Twix-TV-Commercial-PJ-Voiceovers-UK.mp4
+  image: http://www.pj-voiceovers.co.uk/wp-content/uploads/2015/05/Twix-Male-Voiceover-UK-PJ.jpg
+
+- Moonpig Father's Day TVC
+  video: http://www.pj-voiceovers.co.uk/wp-content/uploads/2016/05/Moonpig-Fathers-Day-2015-Gifts.mp4
+  image: http://www.pj-voiceovers.co.uk/wp-content/uploads/2013/05/moonpig_com_logo.jpg
+
+- Train vs Plane - the Virgin Trains experience means no more airport queues
+  video: http://www.pj-voiceovers.co.uk/wp-content/uploads/2017/05/Train-vs-Plane-the-Virgin-Trains-experience-means-no-more-airport-queues.mp4
+  image: http://www.pj-voiceovers.co.uk/wp-content/uploads/2017/05/virgin-trains-squarelogo-1428048342308.png
+
+Build this section as either:
+- one featured video player with selectable thumbnails
+or
+- a responsive grid of video cards
+
+About section:
+Write concise modern copy introducing PJ as an award-winning British male voiceover artist with over 15 years of professional experience. Mention commercials, narration, character voices, audio drama, and versatility.
+
+Services section:
+Create clean cards or icon panels for:
+- Commercials
+- Narration
+- E-learning
+- Character Voices
+- Audio Drama
+- Accents & Impressions
+
+Studio / delivery section:
+Include:
+- Professional studio
+- Fast turnaround
+- Source Connect
+- MP3 / WAV delivery
+- Remote recording availability
+
+Contact section:
+Create a strong CTA with:
+- click-to-call phone link
+- email button using mailto:
+- short invitation to request a quote or demo
+
+SEO:
+Add:
+- page title
+- meta description
+- Open Graph tags
+- canonical
+- suitable JSON-LD schema for a voiceover artist / local creative service
+
+Accessibility:
+- semantic headings
+- alt text
+- visible focus states
+- accessible controls
+- buttons and links that are easy to use on mobile
+
+Code requirements:
+- Organise content into reusable components
+- Keep demo and video data in arrays/objects
+- Use clean, maintainable code
+- No em dashes
+- Ready for Vercel deployment
+
+Audio file handling:
+Assume the 7 MP3 files will be placed in the public/audio/ folder, and reference them as:
+- /audio/pj-commercial-voiceover-demo.mp3
+- /audio/commercial-voice-reel-2-pj-voiceovers.mp3
+- /audio/big-voice-pj-example.mp3
+- /audio/welsh-accent-showreel.mp3
+- /audio/pj-narration-example.mp3
+- /audio/big-finish-pj-acting-demo.mp3
+- /audio/pj-character-demo.mp3
+
+Finally:
+1. Build the complete one-page site
+2. Make the audio demo section especially strong and visually polished
+3. Make it client-ready
+4. Keep the code easy to edit later
